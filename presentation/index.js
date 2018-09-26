@@ -48,7 +48,7 @@ export default class Presentation extends React.Component {
             <List>
               <ListItem>JavaScript Testing framework built by Facebook</ListItem>
               <ListItem>Can be used for both unit tests and front-end integration testing</ListItem>
-              <ListItem>Easily mock functions to produce fast, reListItemable tests</ListItem>
+              <ListItem>Mocking system allows you to produce fast, reliable tests</ListItem>
               <ListItem>Easily integrates with Webpack</ListItem>
               <ListItem>Setup and tear down features before each test or blocks of test</ListItem>
               <ListItem>
@@ -72,12 +72,14 @@ export default class Presentation extends React.Component {
           <Text size={6} textColor="secondary" textAlign="left">
             <List>
               <ListItem>JS located in the _client/ folder is modularized. Tests located in _client/__tests__</ListItem>
+              <ListItem>Test should have the extension .test.js</ListItem>
               <ListItem>Folder structure in __tests__ match the folder structure in _client</ListItem>
               <ListItem>For CI, we can use `npm run test` to run our tests</ListItem>
               <ListItem>
 								During dev process, we can watch tests and they will automatically rerun for code change using `npm run
 								test-watch`
               </ListItem>
+              <ListItem>For tests we should be looking to follow the same methodology as BED. "Arrange, Act, Assert." </ListItem>
             </List>
           </Text>
         </Slide>
@@ -91,6 +93,7 @@ export default class Presentation extends React.Component {
           <Text size={6} textColor="secondary" textAlign="left">
             <List>
               <ListItem>Currently working on CI-53 branch. This branch will be eventually merged into KitSkus</ListItem>
+              <ListItem>Documentation in __tests__/_docs in markdown format (similar to BED)</ListItem>
               <ListItem>Training around writing front-end tests?</ListItem>
               <ListItem>All _client modules should include at least 1 unit test?</ListItem>
               <ListItem>Integrate into our CI process? Take action on failure?</ListItem>
